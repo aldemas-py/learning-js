@@ -1,0 +1,25 @@
+
+<html>
+    <head>
+        <title>test</title>
+        <script>
+            var link1=new File("test/index.html");
+            function linkCheaker() {
+                if (link1.exists()) {
+                    alert("eey yooh");
+                } else {
+                    alert("sory bro")
+                }
+                alert("ee")
+            }
+            function clicked() {
+                alert("read");
+                linkCheaker();
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="clicked()">click me</button>
+    </body>
+</html>
+
