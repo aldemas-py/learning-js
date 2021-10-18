@@ -31,18 +31,17 @@ function process(){
         xmlHttp.onreadystatechange = handleServerResponse;
         xmlHttp.send(null);
     } else {
-        setTimeout('process()', 1000);
+        setTimeout('process()', 900);
     }
 }
-
 function handleServerResponse() {
     if (xmlHttp.readyState == 4) {
         if (xmlHttp.status == 200) {
             xmlResponse = xmlHttp.responseXML;
-            XMLDocumentElement = xmlResponse.documentElement;
+            xmlDocumentElement = xmlResponse.documentElement;
             message = XMLDocumentElement.firstChild.data;
             document.getElementById('underInput').innerHTML='<span style="color:blue">' + message + '</span>';
-            setTimeout('process()', 1000);
+            setTimeout('process()', 900);
         }
         else{
             alert('Someting went wrong ! readyState = ' + xmlHttp.readyState + ', Status = ' + xmlHttp.status);
