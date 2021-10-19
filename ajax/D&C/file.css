@@ -1,0 +1,30 @@
+.dudeTable{
+    border: 3px solid #cc0000;
+    background-color: #0099cc;
+    color: white;
+}
+.dudeHead{
+    font-family: Verdana, Geneva;
+    font-family: bold;
+    font-size: 18px;
+}
+.dudeitems{
+    font-family: Verdana, Geneva;
+    font-size: 16px;
+}
+
+/**********/
+.chickTable{
+    border: 10px solid #CC3399;
+    background-color: #FFFF00;
+}
+.chickHead{
+    font-family:Georgia;
+    font-family: bold;
+    font-size: 15px;
+}
+.chickitems{
+    font-family: Georgia;
+    font-size: 14px;
+    font-style: italic;
+}
