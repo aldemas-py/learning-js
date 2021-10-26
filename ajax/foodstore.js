@@ -36,6 +36,9 @@ function process(){
 }
 function handleServerResponse() {
     if (xmlHttp.readyState == 4) {
+        if (xmlHttp.status== 203) {
+            alert("heeeyooo");
+        }
         if (xmlHttp.status == 200) {
             xmlResponse = xmlHttp.responseXML;
             xmlDocumentElement = xmlResponse.documentElement;
